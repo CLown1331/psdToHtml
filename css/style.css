@@ -47,10 +47,10 @@
     background-color: green;
 }
 .sidebar {
-    float: left;
+    height: auto;
 }
 .content {
-    float: left;
+    height: auto;
 }
 .float-left {
     float: left;
@@ -60,4 +60,19 @@ table {
 }
 tr {
     width: 14.2857142857%;
+}
+.container {
+    width: 720px;
+    height: 100%;
+    margin: auto;
+    background-color: lemonchiffon;
+    overflow: hidden;
+}
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    margin: auto;
 }

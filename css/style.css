@@ -47,7 +47,13 @@
     background-color: green;
 }
 .sidebar {
-    height: auto;
+    height: calc(100vh - (100vh * 0.04466666666));
+    width: calc(100vw * 0.0641025641);
+}
+header {
+    min-height: calc(100vh * 0.04466666666);
+}
+nav {
 }
 .content {
     height: auto;
@@ -62,9 +68,9 @@ tr {
     width: 14.2857142857%;
 }
 .container {
-    width: 720px;
-    height: 100%;
-    margin: auto;
+    width: calc(100% - (100% * 0.0641025641));
+    height: calc(100% - (100% * 0.04466666666));
+    float: left;
     background-color: lemonchiffon;
     overflow: hidden;
 }
@@ -75,4 +81,6 @@ tr {
 }
 body {
     margin: auto;
+    width: 100vw;
+    height: 100vh;
 }

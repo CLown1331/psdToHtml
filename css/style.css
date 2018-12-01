@@ -2,15 +2,8 @@
 @import "var.css";
 @import "grid.css";
 @import "gap.css";
-.blue {
-    background-color: blue;
-}
-.red {
-    background-color: red;
-}
-.green {
-    background-color: green;
-}
+@import "colors.css";
+
 .sidebar {
     height: calc(100vh - (100vh * 0.04466666666));
     width: calc(100vw * 0.0641025641);
@@ -25,6 +18,9 @@ nav {
 }
 .float-left {
     float: left;
+}
+.float-right {
+    float: right;
 }
 table {
     margin: auto;

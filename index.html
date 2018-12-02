@@ -1,138 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title> Dashboard </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     </head>
     <body>
         <header class="col-12 float-left background-color-white">
             <div class="col-7 float-left">
-                <button class="background-color-white"> <i class="fas fa-bars color-gray"></i> </button>
-                <input type="search" placeholder="Search.." class="background-color-bluegray margin-left-5 margin-right-0">
-                <button class="background-color-bluegray margin-left-0 padding-left-0 color-gray"> <i class="fas fa-search"></i> </button>
-                <button class="background-color-white color-gray"> Authors </button>
-                <button class="background-color-white color-gray"> My Files </button>
-                <button class="background-color-white color-gray"> Trending </button>
+                <button class="col-1 background-color-white padding-all-4 margin-left-4 margin-right-5 float-left" tabindex="1"> <i class="fas fa-bars color-gray"></i> </button>
+                <form class="col-3 float-left margin-all-3 search">
+                    <input type="search" placeholder="Search.." class="background-color-bluegray padding-bottom-2" tabindex="2">
+                    <button class="background-color-bluegray color-gray corner" tabindex="3"> <i class="fas fa-search"></i> </button>
+                </form>
+                <div class="col-8">
+                    <button class="background-color-white color-gray padding-all-3" tabindex="4"> Authors </button>
+                    <button class="background-color-white color-gray padding-all-3" tabindex="5"> My Files </button>
+                    <button class="background-color-white color-gray padding-all-3" tabindex="6"> Trending </button>
+                </div>
             </div>
-            <div class="col-3 float-left">  </div>
-            <div class="col-2 float-right"> 
-                <button class="background-color-white"> 
-                    <i class="fas fa-bell color-gray"></i> 
-                    <span class="button_badge"> 2 </span>
-                </button>
-                <button class="background-color-white"> <i class="fas fa-expand-arrows-alt color-gray"></i> </button>
-                <button class="background-color-white"> <i class="fas fa-user-circle color-gray"></i> </button>
+            <div class="col-4 float-left padding-all-0">  &nbsp </div>
+            <div class="col-1 float-left">
+                <div class="col-12 float-right margin-all-0">
+                    <button class="background-color-white padding-top-3 padding-bottom-3 padding-left-3 padding-right-2" tabindex="7">
+                        <i class="fas fa-bell color-gray">
+                            <span class="button_badge"> 2 </span>
+                        </i>
+                    </button>
+                    <button class="background-color-white padding-top-3 padding-bottom-3 padding-left-2 padding-right-2" tabindex="8"> <i class="fas fa-expand-arrows-alt color-gray"></i> </button>
+                    <button class="background-color-white padding-top-3 padding-bottom-3 padding-left-2 padding-right-0" tabindex="9"> <i class="fas fa-user-circle color-gray"></i> </button>
+                </div>
             </div>
         </header>
         <nav class="background-color-black float-left sidebar">
-            <button class="background-color-black col-12 margin-top-4 margin-bottom-2"> <i class="fas fa-home color-bluegray"></i> </button>
-            <button class="background-color-black col-12 margin-top-2 margin-bottom-2"> <i class="fas fa-envelope color-bluegray"></i> </button>
-            <button class="background-color-black col-12 margin-top-2 margin-bottom-2"> <i class="fas fa-eye color-bluegray"></i> </button>
-            <button class="background-color-black col-12 margin-top-2 margin-bottom-2"> <i class="fas fa-adjust color-bluegray"></i> </button>
-            <button class="background-color-black col-12 margin-top-2 margin-bottom-2"> <i class="fas fa-map-marker-alt color-bluegray"></i> </button>
-            <button class="background-color-black col-12 margin-top-2 margin-bottom-2"> <i class="fas fa-expand color-bluegray"></i> </button>
-            <button class="background-color-black col-12 margin-top-2 margin-bottom-2"> <i class="fas fa-chart-line color-bluegray"></i> </button>
-            <button class="background-color-black col-12 margin-top-2 margin-bottom-2"> <i class="fas fa-cog color-bluegray"></i> </button>
+            <button class="background-color-black col-12 padding-top-4 padding-bottom-4" tabindex="17"> <i class="fas fa-home color-bluegray"></i> </button>
+            <button class="background-color-black col-12 padding-top-4 padding-bottom-4" tabindex="18"> <i class="fas fa-envelope color-bluegray"></i> </button>
+            <button class="background-color-black col-12 padding-top-4 padding-bottom-4" tabindex="19"> <i class="fas fa-eye color-bluegray"></i> </button>
+            <button class="background-color-black col-12 padding-top-4 padding-bottom-4" tabindex="20"> <i class="fas fa-adjust color-bluegray"></i> </button>
+            <button class="background-color-black col-12 padding-top-4 padding-bottom-4" tabindex="21"> <i class="fas fa-map-marker-alt color-bluegray"></i> </button>
+            <button class="background-color-black col-12 padding-top-4 padding-bottom-4" tabindex="22"> <i class="fas fa-expand color-bluegray"></i> </button>
+            <button class="background-color-black col-12 padding-top-4 padding-bottom-4" tabindex="23"> <i class="fas fa-chart-line color-bluegray"></i> </button>
+            <button class="background-color-black col-12 padding-top-4 padding-bottom-4" tabindex="24"> <i class="fas fa-cog color-bluegray"></i> </button>
         </nav>
         <div class="container float-left">
-            <div class="col-12 content">
-                <div class="col-12 float-left">
+            <div class="col-12 content float-left">
+                <div class="col-12 float-left padding-left-5">
                     <div class="col-6 float-left">
-                        <div class="col-12 float-left"> Dashboard </div>
-                        <div class="col-12 float-left"> Welcome to the freebranders admin panel </div>
+                        <h1 class="col-12 float-left padding-top-3 color-gray"> Dashboard </h1>
+                        <h3 class="col-12 float-left padding-top-3 color-gray"> Welcome to the freebranders admin panel </h3>
                     </div>
-                    <div class="col-6 float-left">
-                        <div class="col-12"> Freebranders / Dasboard </div>
+                    <div class="col-6 float-left padding-top-5">
+                        <h3 align="right" class="col-12 float-right padding-right-5 margin-right-5 color-gray"> Freebranders / Dashboard </h3>
                     </div>
                 </div>
-                <div class="col-12 background-color-bluegray">
-                    <div class="col-12">
-                        <div class="col-12"> actionbar </div>
-                        <table class="col-12">
+                <div class="col-12 float-left background-color-bluegray padding-all-5 box-shadow">
+                    <div class="col-12 background-color-white">
+                        <div class="col-12 padding-all-0">
+                            <div class="col-1 float-left padding-all-auto margin-all-auto">
+                                <div class="col-12 padding-all-5 margin-all-auto padding-left-17">
+                                    <strong> Recent Order </strong>
+                                </div>
+                            </div>
+                            <div class="col-10 float-left">
+                                &nbsp
+                            </div>
+                            <div class="col-1 float-left">
+                                <button class="background-color-black padding-all-5 margin-all-0"><span class="color-white" tabindex="10">+ New Order</span></button>
+                            </div>
+                        </div>
+                        <table class="col-12 padding-all-0">
                             <thead>
                                 <tr>
-                                    <th> 1 </th>
-                                    <th> 2 </th>
-                                    <th> 3 </th>
-                                    <th> 4 </th>
-                                    <th> 5 </th>
-                                    <th> 6 </th>
-                                    <th> 7 </th>
+                                    <th> PRODUCT NAME </th>
+                                    <th> PRODUCT CODE </th>
+                                    <th> STATUS </th>
+                                    <th> PURCHASED ON </th>
+                                    <th> PRICE </th>
+                                    <th> QUANTITY </th>
+                                    <th> TRACKING NO# </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td> 1 </td>
+                                    <td> Leisure Suit Casual </td>
+                                    <td> #BSD59 </td>
+                                    <td> <button class="background-color-teal color-white table-button"> Paid </button> </td>
+                                    <td> 27 Sep 2015 </td>
+                                    <td> $99.00 </td>
                                     <td> 2 </td>
-                                    <td> 3 </td>
-                                    <td> 4 </td>
-                                    <td> 5 </td>
-                                    <td> 6 </td>
-                                    <td> 7 </td>
+                                    <td> #BG6R83LP </td>
                                 </tr>
                                 <tr>
-                                    <td> 1 </td>
+                                    <td> Leisure Suit Casual </td>
+                                    <td> #BSD59 </td>
+                                    <td> <button class="background-color-yellow color-white table-button"> Pending </button> </td>
+                                    <td> 27 Sep 2015 </td>
+                                    <td> $99.00 </td>
                                     <td> 2 </td>
-                                    <td> 3 </td>
-                                    <td> 4 </td>
-                                    <td> 5 </td>
-                                    <td> 6 </td>
-                                    <td> 7 </td>
+                                    <td> #BG6R83LP </td>
                                 </tr>
                                 <tr>
-                                    <td> 1 </td>
+                                    <td> Leisure Suit Casual </td>
+                                    <td> #BSD59 </td>
+                                    <td> <button class="background-color-teal color-white table-button"> Paid </button> </td>
+                                    <td> 27 Sep 2015 </td>
+                                    <td> $99.00 </td>
                                     <td> 2 </td>
-                                    <td> 3 </td>
-                                    <td> 4 </td>
-                                    <td> 5 </td>
-                                    <td> 6 </td>
-                                    <td> 7 </td>
+                                    <td> #BG6R83LP </td>
                                 </tr>
                                 <tr>
-                                    <td> 1 </td>
+                                    <td> Leisure Suit Casual </td>
+                                    <td> #BSD59 </td>
+                                    <td> <button class="background-color-red color-white table-button"> Failed </button> </td>
+                                    <td> 27 Sep 2015 </td>
+                                    <td> $99.00 </td>
                                     <td> 2 </td>
-                                    <td> 3 </td>
-                                    <td> 4 </td>
-                                    <td> 5 </td>
-                                    <td> 6 </td>
-                                    <td> 7 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> 2 </td>
-                                    <td> 3 </td>
-                                    <td> 4 </td>
-                                    <td> 5 </td>
-                                    <td> 6 </td>
-                                    <td> 7 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> 2 </td>
-                                    <td> 3 </td>
-                                    <td> 4 </td>
-                                    <td> 5 </td>
-                                    <td> 6 </td>
-                                    <td> 7 </td>
+                                    <td> #BG6R83LP </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-12">
-                        pagination
+                    <div class="col-12 pagination align-center margin-all-3">
+                        <div class="margin-all-auto">
+                            <button class="button-round background-color-red box-shadow" aria-label="Previous Page" tabindex="11"> << </button>
+                            <button class="button-round background-color-black box-shadow" aria-label="Page 1" tabindex="12"> 1 </button>
+                            <button class="button-round background-color-white box-shadow" aria-label="Page 2" tabindex="13"> 2 </button>
+                            <button class="button-round background-color-white box-shadow" aria-label="Page 3" tabindex="14"> 3 </button>
+                            <button class="button-round background-color-white box-shadow" aria-label="Page 4" tabindex="15"> 4 </button>
+                            <button class="button-round background-color-red box-shadow" aria-label="Next Page" tabindex="16"> >> </button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="col-3 red float-left"> Tile 1 </div>
-                    <div class="col-6 green float-left"> Tile 2 </div>
-                    <div class="col-3 red float-left"> Tile 3 </div>
+                <div class="col-12 float-left">
+                    <div class="col-4 background-color-bluegray float-left">
+                        <div class="col-12 float-left">
+                            <div class="col-2 float-left background-color-teal color-white margin-left-5">
+                                <i class="col-12 fas fa-dollar-sign padding-all-3 margin-left-2"></i>
+                            </div>
+                            <div class="col-9 float-left background-color-white padding-top-0 padding-bottom-0">
+                                <div class="col-12"> &nbsp; </div>
+                                <div class="col-12 color-teal align-center">
+                                    <span class="margin-all-auto padding-bottom-5 padding-top-5"> 98225 </span>
+                                </div>
+                                <div class="col-12 color-gray align-center">
+                                    <span class="margin-all-auto padding-bottom-5 padding-top-5"> Last Weeks Sale </span>
+                                </div>
+                                <div class="col-12"> &nbsp; </div>
+                            </div>
+                        </div>
+                        <div class="col-11 float-left margin-left-8 margin-top-5 background-color-white">
+                            <div class="col-12 background-color-black color-bluegray padding-bottom-3 padding-top-3 align-center">
+                                CLIENT'S ORDER OF THE MONTH
+                            </div>
+                            <div class="col-12 align-center padding-bottom-3 padding-top-3">
+                                <span> JACK RICHARD </span>
+                            </div>
+                            <div class="col-12 align-center"> Trade Time : 12:45 PM </div>
+                            <div class="col-12 align-center"> Country : England </div>
+                            <div class="col-12 align-center"> Status : Approve </div>
+                            <div class="col-12 color-gray align-center padding-bottom-3 padding-top-3"> APPRICIATE </div>
+                        </div>
+                    </div>
+                    <div class="col-5 background-color-bluegray float-left">
+                        <div class="col-12 color-bluegray float-left">
+                            <div class="col-2"></div>
+                            <div class=" col-5 background-color-white float-left margin-left-4">
+                                    <div class="col-12 align-center padding-top-5 padding-bottom-4 color-teal"> <i class="fas fa-users"></i> </div>
+                                    <div class="col-12 align-center padding-top-5 padding-bottom-4">
+                                        <i class="fas fa-long-arrow-alt-up color-red"></i>
+                                        <span class="color-black"> 125 K </span>
+                                        <span class="color-red"> (+0.50%) </span>
+                                    </div>
+                            </div>
+                            <div class=" col-5 background-color-white float-left margin-left-3">
+                                <div class="col-12 align-center padding-top-5 padding-bottom-4 color-blue"> <i class="fab fa-facebook-f"></i> </div>
+                                <div class="col-12 align-center padding-top-5 padding-bottom-4">
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-11 float-left margin-left-5 margin-top-5 background-color-white">
+                            <div class="col-12 color-gray padding-bottom-3 padding-top-3 align-center">
+                                WRITE SOMETHING.....
+                            </div>
+                            <div class="col-12 color-gray align-center padding-bottom-5 padding-top-3">
+                                 <div class="col-6 float-left padding-bottom-3"> <i class="fas fa-camera color-teal"></i> Upload </div>
+                                <div class="col-6 float-left padding-bottom-3"> <i class="fas fa-times color-red"></i> Cancel </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 background-color-bluegray float-left">
+                        <div class="col-11 float-left margin-left-8 margin-top-5 background-color-white">
+                            <div class="col-12 background-color-black color-bluegray padding-bottom-3 padding-top-3 align-center">
+                                MONTHLY TRAFFIC
+                            </div>
+                            <div class="col-12 align-center padding-top-3">
+                                Mozilla Firefox : 39.8%
+                            </div>
+                            <div class="col-12 align-center"> Google Chrome : 39.8% </div>
+                            <div class="col-12 align-center"> Internet Explorer : 39.8% </div>
+                            <div class="col-12 align-center"> Mobile or Tablet : 39.8% </div>
+                            <div class="col-12 align-center padding-bottom-3"> Other : 39.8% </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12">
-                    <div class="col-4 green float-left"> Chart 1 </div>
-                    <div class="col-8 blue float-left"> Chart 2 </div>
+                <div class="col-12 float-left">
+                    <div class="col-4 background-color-bluegray float-left margin-top-5 margin-left-5">
+                        <div class="col-11 background-color-white float-left">
+                            <div class="col-12 float-left"> &nbsp; </div>
+                            <div class="col-12 background-color-black color-bluegray float-left"> <span class="margin-left-4"> Deal Ends in </span> </div>
+                            <div class="col-12 float-left"> &nbsp;
+                                <div class="col-6 float-left margin-all-0">
+                                    <div class="col-12 padding-all-3"> Time Setting </div>
+                                </div>
+                                <div class="col-5 float-left margin-all-0">
+                                    <div class="col-12 padding-all-3" align="right">
+                                        <button class="background-color-bluegray color-teal button-border-gray"> - </button>
+                                        <button class="background-color-bluegray color-teal button-border-gray"> + </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" align="center">
+                                <strong> 01 : 18 : 43 : 02 </strong> </div>
+                            <div class="col-12" align="center">
+                                <strong> Day Hrs Min Sec </strong>
+                            </div>
+                            <div class="col-12 float-left">
+                                <div class="col-5 float-left padding-left-3 padding-top-3 padding-bottom-3">
+                                    <span class="color-teal"> Was: </span>
+                                    <span class="strike-through"> $288 </span>
+                                </div>
+                                <div class="col-6 float-left padding-top-3 padding-bottom-3">
+                                    <div class="col-12 float-right" align="right">
+                                        <span class="color-teal"> Now: </span>
+                                        <span> $288 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="col-4 float-left">
+                                    <button class="col-12 background-color-black color-teal"> < </button>
+                                </div>
+                                <div class="col-4 float-left">
+                                    <button class="col-12 background-color-teal color-white"> DEAL </button>
+                                </div>
+                                <div class="col-4 float-left">
+                                    <button class="col-12 background-color-black color-teal"> > </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 background-color-black float-left">
+                            <div class="col-12 float-left color-bluegray" align="center">
+                                <div class="col-12 padding-top-3 padding-bottom-3"> X </div>
+                            </div>
+                            <div class="col-12 float-left vertical-text color-bluegray">
+                                <div class="col-12 padding-right-3 padding-left-0"> MOBILE WRIST WATCH </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7 background-color-bluegray float-left padding-all-0 margin-left-5">
+                        <div class="col-12 padding-left-5 margin-left-0">
+                            <img src="assets/chart.png" class="padding-all-3 col-12">
+                        </div>
+                    </div>
                 </div>
-                
+
             </div>
         </div>
     </body>
